@@ -1,0 +1,19 @@
+{
+  "name": "superbvue-docs",
+  "version": "0.0.1",
+  "description": "The Most Complete Vue UI Component Library using bootstrap v5",
+  "main": "index.js",
+  "authors": {
+    "name": "Vu Tran",
+    "email": "linpinlinpin3@yahoo.com"
+  },
+  "repository": "https://github.com/superbvue/superbvue-docs",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}

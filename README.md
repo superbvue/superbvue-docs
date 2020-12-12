@@ -1,17 +1,15 @@
-# superbvue-docs
+# Superbvue-docs
 
 ## Development
 
 This site is powered by [VuePress](https://vuepress.vuejs.org/).
 
 ``` bash
-cd docs 
 yarn install
 yarn dev
 ```
 Or
 ``` bash
-cd docs
 npm install
 npm run dev
 ```

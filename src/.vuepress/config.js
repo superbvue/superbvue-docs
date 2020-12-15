@@ -43,10 +43,10 @@ module.exports = {
       //   text: 'Config',
       //   link: '/config/'
       // },
-      // {
-      //   text: 'Github',
-      //   link: 'https://github.com/superbvue/SuperBVue'
-      // }
+      {
+        text: 'Github',
+        link: 'https://github.com/superbvue/superbvue-docs'
+      }
     ],
     sidebar: {
       '/guide/': [

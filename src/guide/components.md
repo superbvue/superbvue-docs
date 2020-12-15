@@ -174,7 +174,86 @@ export default defineComponent({
 ## Popovers
 ... Coming soon. Stay tune.
 ## Progress
-... Coming soon. Stay tune.
+
+::: details template
+``` html
+<template>
+  <SBProgress :value="state.progressValue" variant="warning" />
+
+  <!-- Add label -->
+  <SBProgress :value="state.progressValue" :label="state.progressValue" variant="warning" />
+
+  <!-- Multiple Progress bars -->
+  <SBProgress max="100" :label="state.progressValue">
+    <SBProgressBar :value="state.progressValue" :label="state.value" variant="warning" />
+  </SBProgress>
+</template>
+```
+
+```js
+import { SBProgress, SBProgressBar } from 'superbvue'
+
+export default defineComponent({
+  components: {
+    SBProgress,
+    SBProgressBar
+  },
+  setup() {
+    const state = reactive({
+      progressValue: 75
+    })
+
+    return {
+      state
+    }
+  }
+})
+```
+:::
+
+::: details jsx
+```jsx
+import { SBProgress, SBProgressBar } from 'superbvue'
+
+export default defineComponent({
+  setup() {
+    const state = reactive({
+      progressValue: 75
+    })
+
+    return {
+      state
+    }
+  },
+  render() {
+    return (
+      <div>
+        <SBProgress value={this.state.progressValue} variant="warning" />
+
+        // Add label
+        <SBProgress value={this.state.progressValue} label={this.state.progressValue} variant="warning" />
+
+        // Multiple Progress bars
+        <SBProgress max={100} label={this.state.progressValue} variant="warning">
+          <SBProgressBar value={this.state.progressValue} label={this.state.progressValue} variant="warning" />
+        </SBProgress>
+      </div>
+    )
+  }
+})
+```
+:::
+
+| Property | Type | Default | Description |
+| ------------- |:-------------: | :-----: | :-------------: |
+| value | Number | | |
+| striped | Boolean | | Striped |
+| animated | Boolean | | Animated stripes |
+| height | String | | |
+| showProgress | Boolean | | |
+| showValue | Boolean | | |
+| variant | String |  | Set background color. `primary | secondary | success | danger | warning | info | light | dark` |
+
 ## Scrollspy
 ... Coming soon. Stay tune.
 ## Spinners

@@ -29,7 +29,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: 'superbvue/superbvue-doc',
+    repo: 'superbvue/superbvue-docs',
     editLinks: false,
     // docsDir: 'src',
     editLinkText: '',
@@ -56,6 +56,7 @@ module.exports = {
           children: [
             '',
             'Setup',
+            'Layout And Grid System',
             'components',
             'form'
           ]

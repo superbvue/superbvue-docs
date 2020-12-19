@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Layout and Grid System | SuperBVue</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="The Most Complete Vue UI Component Library using bootstrap v5">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.bf71d33a.css" as="style"><link rel="preload" href="/assets/js/app.9f5f665d.js" as="script"><link rel="preload" href="/assets/js/2.d9836de0.js" as="script"><link rel="preload" href="/assets/js/11.afa869a9.js" as="script"><link rel="prefetch" href="/assets/js/10.bd6fd6a5.js"><link rel="prefetch" href="/assets/js/12.bbbf235f.js"><link rel="prefetch" href="/assets/js/13.ec9ec8ab.js"><link rel="prefetch" href="/assets/js/14.c16e1d1f.js"><link rel="prefetch" href="/assets/js/15.830693e2.js"><link rel="prefetch" href="/assets/js/16.e988f831.js"><link rel="prefetch" href="/assets/js/3.0277475e.js"><link rel="prefetch" href="/assets/js/4.bf905f50.js"><link rel="prefetch" href="/assets/js/5.44066470.js"><link rel="prefetch" href="/assets/js/6.ffe6f60a.js"><link rel="prefetch" href="/assets/js/7.a00e933e.js"><link rel="prefetch" href="/assets/js/8.94f9e596.js"><link rel="prefetch" href="/assets/js/9.2250d602.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bf71d33a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">SuperBVue</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  Guide
+</a></div> <a href="https://github.com/superbvue/superbvue-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  Guide
+</a></div> <a href="https://github.com/superbvue/superbvue-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/guide/Setup.html" class="sidebar-link">Installation</a></li><li><a href="/guide/Layout And Grid System.html" class="active sidebar-link">Layout and Grid System</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/Layout And Grid System.html#containers" class="sidebar-link">Containers</a></li><li class="sidebar-sub-header"><a href="/guide/Layout And Grid System.html#row" class="sidebar-link">Row</a></li><li class="sidebar-sub-header"><a href="/guide/Layout And Grid System.html#column" class="sidebar-link">Column</a></li><li class="sidebar-sub-header"><a href="/guide/Layout And Grid System.html#" class="sidebar-link"></a></li></ul></li><li><a href="/guide/components.html" class="sidebar-link">Components</a></li><li><a href="/guide/form.html" class="sidebar-link">Form</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="layout-and-grid-system"><a href="#layout-and-grid-system" class="header-anchor">#</a> Layout and Grid System</h1> <h2 id="containers"><a href="#containers" class="header-anchor">#</a> Containers</h2> <details class="custom-block details"><summary>template</summary> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SBContainer</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- Content here --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>SBContainer</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SBContainer</span> <span class="token attr-name">fluid</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- Content here --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>SBContainer</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> SBContainer <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'superbvue'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineComponent</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+    SBContainer
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></details> <details class="custom-block details"><summary>jsx</summary> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> SBContainer <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'superbvue'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineComponent</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Fragment</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SBContainer</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          //  Content here
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SBContainer</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SBContainer</span></span> <span class="token attr-name">fluid</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          //  Content here
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SBContainer</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Fragment</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></details> <table><thead><tr><th>Property</th> <th style="text-align:center;">Type</th> <th style="text-align:center;">Default</th> <th style="text-align:center;">Description</th></tr></thead> <tbody><tr><td>fluid</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr> <tr><td>tag</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr> <tr><td>widths</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr> <tr><td>class</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr> <tr><td>style</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr></tbody></table> <h2 id="row"><a href="#row" class="header-anchor">#</a> Row</h2> <details class="custom-block details"><summary>template</summary> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SBContainer</span> <span class="token attr-name">widths</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>sm<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SBRow</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SBRow</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SBCol</span><span class="token punctuation">&gt;</span></span>
+        1 of 3
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>SBCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SBCol</span> <span class="token attr-name">cols</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>6<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        2 of 3
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>SBCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SBCol</span><span class="token punctuation">&gt;</span></span>
+        3 of 3
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>SBCol</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>SBRow</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>SBContainer</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> SBContainer<span class="token punctuation">,</span> SBRow<span class="token punctuation">,</span> SBCol <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'superbvue'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineComponent</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+    SBContainer<span class="token punctuation">,</span>
+    SBRow<span class="token punctuation">,</span>
+    SBCol
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></details> <details class="custom-block details"><summary>jsx</summary> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> SBContainer<span class="token punctuation">,</span> SBRow<span class="token punctuation">,</span> SBCol <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'superbvue'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineComponent</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Fragment</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+         </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SBContainer</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SBRow</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SBCol</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+              1 of 2
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SBCol</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SBCol</span></span> <span class="token attr-name">cols</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>5<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+              2 of 2
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SBCol</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SBRow</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SBRow</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SBCol</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+              1 of 3
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SBCol</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SBCol</span></span> <span class="token attr-name">cols</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>6<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+              2 of 3
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SBCol</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SBCol</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+              3 of 3
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SBCol</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SBRow</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SBContainer</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Fragment</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></details> <table><thead><tr><th>Property</th> <th style="text-align:center;">Type</th> <th style="text-align:center;">Default</th> <th style="text-align:center;">Description</th></tr></thead> <tbody><tr><td>cols</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;">Setting one column width</td></tr> <tr><td>tag</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr> <tr><td>align</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;">vertical alignment of all grid cells in a row <code>start | center | end | baseline | stretch</code></td></tr> <tr><td>justify</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;">horizontal alignment <code>start | center | end | baseline | stretch | around | between | evenly</code></td></tr> <tr><td>class</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr> <tr><td>style</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr></tbody></table> <h2 id="column"><a href="#column" class="header-anchor">#</a> Column</h2> <details class="custom-block details"><summary>template</summary> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SBContainer</span> <span class="token attr-name">widths</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>sm<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SBRow</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SBCol</span><span class="token punctuation">&gt;</span></span>
+        1 of 2
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>SBCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SBCol</span> <span class="token attr-name">cols</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>5<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        2 of 2
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>SBCol</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>SBRow</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SBRow</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SBCol</span><span class="token punctuation">&gt;</span></span>
+        1 of 3
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>SBCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SBCol</span> <span class="token attr-name">cols</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>6<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        2 of 3
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>SBCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SBCol</span><span class="token punctuation">&gt;</span></span>
+        3 of 3
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>SBCol</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>SBRow</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>SBContainer</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> SBContainer<span class="token punctuation">,</span> SBRow<span class="token punctuation">,</span> SBCol <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'superbvue'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineComponent</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+    SBContainer<span class="token punctuation">,</span>
+    SBRow<span class="token punctuation">,</span>
+    SBCol
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></details> <details class="custom-block details"><summary>jsx</summary> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> SBContainer<span class="token punctuation">,</span> SBRow<span class="token punctuation">,</span> SBCol <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'superbvue'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineComponent</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Fragment</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+         </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SBContainer</span></span> <span class="token attr-name">widths</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>sm<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SBRow</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SBCol</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+              1 of 2
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SBCol</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SBCol</span></span> <span class="token attr-name">cols</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>5<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+              2 of 2
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SBCol</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SBRow</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SBRow</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SBCol</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+              1 of 3
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SBCol</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SBCol</span></span> <span class="token attr-name">cols</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>6<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+              2 of 3
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SBCol</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SBCol</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+              3 of 3
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SBCol</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SBRow</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SBContainer</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Fragment</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></details> <table><thead><tr><th>Property</th> <th style="text-align:center;">Type</th> <th style="text-align:center;">Default</th> <th style="text-align:center;">Description</th></tr></thead> <tbody><tr><td>cols</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;">setting one column width</td></tr> <tr><td>sm</td> <td style="text-align:center;">Boolean</td> <td style="text-align:center;"></td> <td style="text-align:center;">columns the grid cell spans for sm and up breakpoints</td></tr> <tr><td>md</td> <td style="text-align:center;">Boolean</td> <td style="text-align:center;"></td> <td style="text-align:center;">columns the grid cell spans for md and up breakpoints</td></tr> <tr><td>lg</td> <td style="text-align:center;">Boolean</td> <td style="text-align:center;"></td> <td style="text-align:center;">columns the grid cell spans for lg and up breakpoints</td></tr> <tr><td>xl</td> <td style="text-align:center;">Boolean</td> <td style="text-align:center;"></td> <td style="text-align:center;">columns the grid cell spans for xl and up breakpoints</td></tr> <tr><td>alignSelf</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;">vertical alignment of individual grid cells in a row <code>start | center | end | baseline | stretch</code></td></tr> <tr><td>justify</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;">horizontal alignment <code>start | center | end | baseline | stretch | around | between | evenly</code></td></tr> <tr><td>order</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;">order classes <code>0 | 1 | 2 | 3 | 4 | 5 | first | last</code></td></tr> <tr><td>orderSmall</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;">order classes sm <code>0 | 1 | 2 | 3 | 4 | 5 | first | last</code></td></tr> <tr><td>orderMiddle</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;">order classes md <code>0 | 1 | 2 | 3 | 4 | 5 | first | last</code></td></tr> <tr><td>orderLarge</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;">order classes lg <code>0 | 1 | 2 | 3 | 4 | 5 | first | last</code></td></tr> <tr><td>offset</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;">offset classes <code>0 | 1 | 2 | 3 | 4 | 5 | first | last</code></td></tr> <tr><td>offsetSmall</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;">offset classes sm <code>0 | 1 | 2 | 3 | 4 | 5 | first | last</code></td></tr> <tr><td>offsetMiddle</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;">offset classes md <code>0 | 1 | 2 | 3 | 4 | 5 | first | last</code></td></tr> <tr><td>offsetLarge</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;">offset classes lg <code>0 | 1 | 2 | 3 | 4 | 5 | first | last</code></td></tr> <tr><td>class</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr> <tr><td>style</td> <td style="text-align:center;">String</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr></tbody></table> <h2 id=""><a href="#" class="header-anchor">#</a></h2></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/Setup.html" class="prev">
+        Installation
+      </a></span> <span class="next"><a href="/guide/components.html">
+        Components
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.9f5f665d.js" defer></script><script src="/assets/js/2.d9836de0.js" defer></script><script src="/assets/js/11.afa869a9.js" defer></script>
+  </body>
+</html>

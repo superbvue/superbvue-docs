@@ -18,6 +18,11 @@ This doc is under WIP. You can [open an issue](https://github.com/superbvue/supe
 - TypeScript support of Vue 3
 - Bootstrap v5 support of Vue 3
 
+
+## Roadmap
+- [ ] Add boostrap Components
+- [ ] Add boostrap icon
+
 ## License
 
 MIT © [Vu Tran](https://github.com/vutran6853)

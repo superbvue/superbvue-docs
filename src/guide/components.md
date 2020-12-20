@@ -7,10 +7,10 @@
 ::: details template
 ``` html
 <template>
-  <SBAlert>my alert message</SBAlert>
+  <SBAlert>primary alert—check it out!</SBAlert>
 
   <!-- add background-color -->
-  <SBAlert variant="primary">my alert message</SBAlert>
+  <SBAlert variant="secondary">secondary alert—check it out!</SBAlert>
 </template>
 ```
 
@@ -23,6 +23,9 @@ export default defineComponent({
   }
 })
 ```
+*Output*
+<SBAlert />
+
 :::
 
 ::: details jsx
@@ -33,15 +36,17 @@ export default defineComponent({
   render() {
     return (
       <div>
-        <SBAlert>my alert message</SBAlert>
+        <SBAlert>primary alert—check it out!</SBAlert>
 
         // add background-color
-        <SBAlert variant="primary">my alert message</SBAlert>
+        <SBAlert variant="secondary">secondary alert—check it out!</SBAlert>
       </div>
     )
   }
 })
 ```
+*Output*
+<SBAlert />
 :::
 
 | Property | Type | Default | Description |
@@ -72,6 +77,8 @@ export default defineComponent({
   }
 })
 ```
+*Output*
+<SBBadge />
 :::
 
 ::: details jsx
@@ -91,6 +98,8 @@ export default defineComponent({
   }
 })
 ```
+*Output*
+<SBBadge />
 :::
 
 
@@ -111,14 +120,16 @@ export default defineComponent({
 
 ## Breadcrumb
 ... Coming soon. Stay tune.
-## Buttons
+## Button
 ::: details template
 ``` html
 <template>
-  <SBButton pill>button 1</SBButton>
-  <SBButton size="lg">button 2</SBButton>
+  <SBButton variant="primary">Primary</SBButton>
+  <SBButton size="lg">Large button</SBButton>
 </template>
 ```
+*Output*
+<SBButton />
 :::
 
 ::: details jsx
@@ -127,13 +138,15 @@ export default defineComponent({
   render() {
     return (
       <Fragment>
-        <SBButton pill>button 1</SBButton>
-        <SBButton size="lg">button 2</SBButton>
+        <SBButton variant="primary">Primary</SBButton>
+        <SBButton size="lg">Large button</SBButton>
       </Fragment>
     )
   }
 })
 ```
+*Output*
+<SBButton />
 :::
 
 | Property | Type | Default | Description |
@@ -186,6 +199,7 @@ export default defineComponent({
   <!-- Multiple Progress bars -->
   <SBProgress max="100" :label="state.progressValue">
     <SBProgressBar :value="state.progressValue" :label="state.value" variant="warning" />
+    <SBProgressBar :value="20" :label="state.value" variant="success" />
   </SBProgress>
 </template>
 ```
@@ -209,6 +223,8 @@ export default defineComponent({
   }
 })
 ```
+*Output*
+<SBProgress />
 :::
 
 ::: details jsx
@@ -242,6 +258,8 @@ export default defineComponent({
   }
 })
 ```
+*Output*
+<SBProgress />
 :::
 
 | Property | Type | Default | Description |
@@ -264,6 +282,8 @@ export default defineComponent({
   <SBSpinners type="glow" />
 </template>
 ```
+*Output*
+<SBSpinner />
 :::
 
 ::: details jsx
@@ -279,6 +299,8 @@ export default defineComponent({
   }
 })
 ```
+*Output*
+<SBSpinner />
 :::
 
 | Property | Type | Default | Description |

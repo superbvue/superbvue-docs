@@ -1,4 +1,5 @@
 const { description } = require('../../package')
+const path = require('path')
 
 module.exports = {
   /**
@@ -37,12 +38,8 @@ module.exports = {
     nav: [
       {
         text: 'Guide',
-        link: '/guide/',
+        link: '/guide/'
       },
-      // {
-      //   text: 'Config',
-      //   link: '/config/'
-      // },
       // {
       //   text: 'Github',
       //   link: 'https://github.com/superbvue/superbvue-docs'
@@ -61,7 +58,7 @@ module.exports = {
             'form'
           ]
         }
-      ],
+      ]
     }
   },
 
@@ -70,6 +67,6 @@ module.exports = {
    */
   plugins: [
     '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-  ]
+    '@vuepress/plugin-medium-zoom'
+  ],
 }

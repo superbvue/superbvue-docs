@@ -1,6 +1,6 @@
 # Layout and Grid System
 
-## Containers
+## Container
 
 ::: details template
 ``` html
@@ -24,7 +24,12 @@ export default defineComponent({
   }
 })
 ```
+
+*Output*
+<SBContainer />
+
 :::
+
 
 ::: details jsx
 ```jsx
@@ -46,6 +51,9 @@ export default defineComponent({
   }
 })
 ```
+*Output*
+<SBContainer />
+
 :::
 
 | Property | Type | Default | Description |
@@ -67,7 +75,7 @@ export default defineComponent({
       <SBCol>
         1 of 3
       </SBCol>
-      <SBCol cols="6">
+      <SBCol>
         2 of 3
       </SBCol>
       <SBCol>
@@ -89,6 +97,10 @@ export default defineComponent({
   }
 })
 ```
+
+*Output*
+<SBRow />
+
 :::
 
 ::: details jsx
@@ -104,7 +116,7 @@ export default defineComponent({
             <SBCol>
               1 of 2
             </SBCol>
-            <SBCol cols="5">
+            <SBCol>
               2 of 2
             </SBCol>
           </SBRow>
@@ -112,7 +124,7 @@ export default defineComponent({
             <SBCol>
               1 of 3
             </SBCol>
-            <SBCol cols="6">
+            <SBCol>
               2 of 3
             </SBCol>
             <SBCol>
@@ -125,6 +137,10 @@ export default defineComponent({
   }
 })
 ```
+
+*Output*
+<SBRow />
+
 :::
 
 | Property | Type | Default | Description |

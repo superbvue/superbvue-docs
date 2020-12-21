@@ -33,6 +33,8 @@ export default defineComponent({
   }
 })
 ```
+*Output*
+<SBFormInput />
 :::
 
 ::: details jsx
@@ -67,6 +69,8 @@ export default defineComponent({
   }
 })
 ```
+*Output*
+<SBFormInput />
 :::
 
 | Property | Type | Default | Description |
@@ -121,6 +125,8 @@ export default defineComponent({
   }
 })
 ```
+*Output*
+<SBFormSelect />
 :::
 
 ::: details jsx
@@ -157,6 +163,8 @@ export default defineComponent({
   }
 })
 ```
+*Output*
+<SBFormSelect />
 :::
 
 | Property | Type | Default | Description |

@@ -1,7 +1,7 @@
 # Form
 
-## Form Control
-... Coming soon. Stay tune.
+<!-- ## Form Control
+... Coming soon. Stay tune. -->
 ## Form Input
 
 ::: details template
@@ -89,8 +89,8 @@ export default defineComponent({
 | size | String | | |
 | variant | String |  | Set background color. `primary | secondary | success | danger | warning | info | light | dark` |
 
-## Form Group
-... Coming soon. Stay tune.
+<!-- ## Form Group
+... Coming soon. Stay tune. -->
 ## Form Select
 
 ::: details template
@@ -184,9 +184,9 @@ export default defineComponent({
 | onChange | Function | | |
 | variant | String |  | Set background color. `primary | secondary | success | danger | warning | info | light | dark` |
 
-## Form Checks & radios
+<!-- ## Form Checks & radios
 ... Coming soon. Stay tune.
 ## Form Range
 ... Coming soon. Stay tune.
 ## Form Control
-... Coming soon. Stay tune.
+... Coming soon. Stay tune. -->

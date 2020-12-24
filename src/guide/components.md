@@ -1,7 +1,7 @@
 # Components
 
-## Accordion
-... Coming soon. Stay tune.
+<!-- ## Accordion -->
+<!-- ... Coming soon. Stay tune. -->
 ## Alert
 
 ::: details template
@@ -119,7 +119,60 @@ export default defineComponent({
 
 
 ## Breadcrumb
-... Coming soon. Stay tune.
+::: details template
+``` html
+<template>
+  <SBBreadcrumb :items="state.items" />
+</template>
+```
+```js
+export default defineComponent({
+  data() {
+    return {
+      state: {
+        items: [
+          { text: 'Home', href: "/", active: false }, 
+          { text: 'Library', href: "/library", active: true }
+        ]
+      }
+    }
+  }
+})
+```
+*Output*
+<SBBreadCrumb />
+:::
+
+::: details jsx
+```jsx
+export default defineComponent({
+  data() {
+    return {
+      state: {
+        items: [
+          { text: 'Home', href: "/", active: false }, 
+          { text: 'Library', href: "/library", active: true }
+        ]
+      }
+    }
+  },
+  render() {
+    return (
+      <Fragment>
+        <SBBreadcrumb items={this.state.items} />
+      </Fragment>
+    )
+  }
+})
+```
+*Output*
+<SBBreadCrumb />
+:::
+
+| Property | Type | Default | Description |
+| ------------- |:-------------: | :-----: | :-------------: |
+| items | Array of object |  | see SBBreadCrumbItem for info |
+
 ## Button
 ::: details template
 ``` html
@@ -162,30 +215,101 @@ export default defineComponent({
 | type | String | button | |
 | variant | String |  | Set color on button. `primary | secondary | success | danger | warning | info | light | dark` |
 
-## Button group
-... Coming soon. Stay tune.
-## Card
-... Coming soon. Stay tune.
-## Carousel
-... Coming soon. Stay tune.
-## Close button
-... Coming soon. Stay tune.
-## Collapse
-... Coming soon. Stay tune.
-## Dropdowns
-... Coming soon. Stay tune.
-## Listgroup
-... Coming soon. Stay tune.
-## Modal
-... Coming soon. Stay tune.
+<!-- ## Button group
+... Coming soon. Stay tune. -->
+<!-- ## Card
+... Coming soon. Stay tune. -->
+<!-- ## Carousel
+... Coming soon. Stay tune. -->
+<!-- ## Close button
+... Coming soon. Stay tune. -->
+<!-- ## Collapse
+... Coming soon. Stay tune. -->
+<!-- ## Dropdowns
+... Coming soon. Stay tune. -->
+<!-- ## Listgroup
+... Coming soon. Stay tune. -->
+<!-- ## Modal
+... Coming soon. Stay tune. -->
 ## Navs & tabs
-... Coming soon. Stay tune.
-## Navbar
-... Coming soon. Stay tune.
-## Pagination
-... Coming soon. Stay tune.
-## Popovers
-... Coming soon. Stay tune.
+::: details template
+``` html
+<template>
+  <SBNavs>
+    <SBNavLink active>Active</SBNavLink>
+    <SBNavLink>Link</SBNavLink>
+    <SBNavLink>Another Link</SBNavLink>
+    <SBNavLink disabled>Disabled Link</SBNavLink>
+  </SBNavs>
+</template>
+```
+<!-- ```js
+export default defineComponent({
+  data() {
+  }
+})
+``` -->
+*Output*
+<SBNavs />
+:::
+
+::: details jsx
+```jsx
+export default defineComponent({
+  render() {
+    return (
+      <Fragment>
+        <SBNavs>
+          <SBNavLink active>Active</SBNavLink>
+          <SBNavLink>Link</SBNavLink>
+          <SBNavLink>Another Link</SBNavLink>
+          <SBNavLink disabled>Disabled Link</SBNavLink>
+        </SBNavs>
+      </Fragment>
+    )
+  }
+})
+```
+*Output*
+<SBNavs />
+:::
+*SBNavs Property*
+| Property | Type | Default | Description |
+| ------------- |:-------------: | :-----: | :-------------: |
+| value | Number | | |
+| justify | Boolean | | horizontal alignment |
+| tabs | Boolean | |  |
+| vertical | Boolean | | |
+| pills | Boolean | | |
+| class | String | | |
+| style | String | | |
+| id | String | | |
+| size | String | md | set nav size. `sm | md | lg` |
+
+*SBNavLink Property*
+| Property | Type | Default | Description |
+| ------------- |:-------------: | :-----: | :-------------: |
+| href | String | | |
+| rel | String | | horizontal alignment |
+| target | String | |  |
+| active | Boolean | | |
+| disabled | Boolean | | |
+| to | String | | |
+| append | Boolean | | |
+| replace | Boolean | | |
+| activeClass | String | | |
+| exact| Boolean | | |
+| exactActiveClass | String | | |
+| style| String | | |
+| id | String | | |
+| size | String | md | set nav size. `sm | md | lg` |
+
+<!-- ## Navbar
+... Coming soon. Stay tune. -->
+<!-- ## Pagination
+... Coming soon. Stay tune. -->
+<!-- ## Popovers
+... Coming soon. Stay tune. -->
 ## Progress
 
 ::: details template
@@ -272,8 +396,8 @@ export default defineComponent({
 | showValue | Boolean | | |
 | variant | String |  | Set background color. `primary | secondary | success | danger | warning | info | light | dark` |
 
-## Scrollspy
-... Coming soon. Stay tune.
+<!-- ## Scrollspy
+... Coming soon. Stay tune. -->
 ## Spinners
 ::: details template
 ``` html
@@ -311,9 +435,9 @@ export default defineComponent({
 | variant | Boolean | false | |
 | class | String | false | |
 | squared | Boolean | false | |
-## Toasts
+<!-- ## Toasts
 ... Coming soon. Stay tune.
 ## Tooltips
-... Coming soon. Stay tune.
+... Coming soon. Stay tune. -->
 
 ##

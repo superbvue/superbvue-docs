@@ -440,4 +440,148 @@ export default defineComponent({
 ## Tooltips
 ... Coming soon. Stay tune. -->
 
+## Table
+
+::: details template
+```html
+<template>
+  <!-- Basic table -->
+  <SBTable v-bind:fields="state.fields" v-bind:items="state.items" />
+</template>
+```
+```js
+import { SBTable } from 'superbvue'
+
+export default defineComponent({
+  components: {
+    SBTable
+  },
+  data() {
+    return {
+      state: {
+        items: [
+          { isActive: true, age: 40, fistName: 'Dickerson', lastName: 'Macdonald' },
+          { isActive: false, age: 21, fistName: 'Larsen', lastName: 'Shaw' },
+          { isActive: false, age: 89, fistName: 'Geneva', lastName: 'Wilson' },
+          { isActive: true, age: 38, fistName: 'Jami', lastName: 'Carney' }
+        ],
+        fields: ['Age', 'First', 'last']
+      }
+    }
+  }
+})
+```
+*Output*
+<SBTable />
+
+<br />
+
+*Using variants for table cells*
+
+```html
+<template>
+  <!-- Using variants for table cells -->
+  <SBTable v-bind:fields="state.fields" v-bind:items="state.items" />
+</template>
+```
+```js
+import { SBTable } from 'superbvue'
+
+export default defineComponent({
+  components: {
+    SBTable
+  },
+  data() {
+    return {
+      state: {
+        items: [
+          { isActive: true, age: 40, fistName: 'Dickerson', lastName: 'Macdonald' },
+          { isActive: false, age: 21, fistName: 'Larsen', rowVariant: 'primary', lastName: 'Shaw' },
+          { isActive: false, age: 89, fistName: 'Geneva', lastName: 'Wilson' },
+          { isActive: true, age: 38, fistName: 'Jami', lastName: 'Carney', cellVariant: { fistName: 'info' } }
+        ],
+        fields: ['Age', 'First', 'last']
+      }
+    }
+  }
+})
+```
+*Output*
+<SBTable />
+:::
+
+::: details jsx
+```jsx
+import { SBTable } from 'superbvue'
+
+export default defineComponent({
+  data() {
+    return {
+      state: {
+        items: [
+          { isActive: true, age: 40, fistName: 'Dickerson', lastName: 'Macdonald' },
+          { isActive: false, age: 21, fistName: 'Larsen', lastName: 'Shaw' },
+          { isActive: false, age: 89, fistName: 'Geneva', lastName: 'Wilson' },
+          { isActive: true, age: 38, fistName: 'Jami', lastName: 'Carney' }
+        ],
+        fields: ['Age', 'First', 'last']
+      }
+    }
+  },
+  render() {
+    return (
+      <Fragment>
+        {/*  Basic table */}
+        <SBTable fields={this.state.field} items={this.state.items} currentPage={this.state.currentPage} perPage={this.state.perPage} />
+      </Fragment>
+    )
+  }
+})
+```
+*Output*
+<SBTable />
+
+<br />
+
+*Using variants for table cells*
+
+```jsx
+import { SBTable } from 'superbvue'
+
+export default defineComponent({
+  data() {
+    return {
+      state: {
+        items: [
+          { isActive: true, age: 40, fistName: 'Dickerson', lastName: 'Macdonald' },
+          { isActive: false, age: 21, fistName: 'Larsen', rowVariant: 'primary', lastName: 'Shaw' },
+          { isActive: false, age: 89, fistName: 'Geneva', lastName: 'Wilson' },
+          { isActive: true, age: 38, fistName: 'Jami', lastName: 'Carney', cellVariant: { fistName: 'info' } }
+        ],
+        fields: ['Age', 'First', 'last']
+      }
+    }
+  },
+  render() {
+    return (
+      <Fragment>
+        {/*  Using variants for table cells */}
+        <SBTable fields={this.state.field} items={this.state.items} currentPage={this.state.currentPage} perPage={this.state.perPage} />
+      </Fragment>
+    )
+  }
+})
+```
+*Output*
+<SBTable />
+:::
+
+*Component Property*
+<SBTableProperty />
+ 
+<!-- ## Toasts
+... Coming soon. Stay tune.
+## Tooltips
+... Coming soon. Stay tune. -->
+
 ##

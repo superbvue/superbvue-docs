@@ -62,12 +62,10 @@
           <td class="text-danger">String</td>
           <td>variants map to classes table-${variant}</td>
         </tr>
-        
       </tbody>
     </table>
   </div>
 </template>
-
 
 <script>
 export default {

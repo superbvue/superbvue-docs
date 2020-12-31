@@ -56,6 +56,8 @@ export default defineComponent({
 | class | String | | |
 | variant | String |  | Set background color. `primary | secondary | success | danger | warning | info | light | dark` |
 
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+
 ## Badge
 
 ::: details template
@@ -112,11 +114,7 @@ export default defineComponent({
 | variant | String |  | Set background color. `primary | secondary | success | danger | warning | info | light | dark` |
 
 
-
-
-
-
-
+<!-- ------------------------------------------------------------------------------------------------------------- -->
 
 ## Breadcrumb
 ::: details template
@@ -396,6 +394,159 @@ export default defineComponent({
 | showValue | Boolean | | |
 | variant | String |  | Set background color. `primary | secondary | success | danger | warning | info | light | dark` |
 
+
+## Pagination
+
+::: details template
+  ```vue
+  <template>
+    <SBPagination v-bind:totalRows="row" v-model="state.currentPage" v-bind:perPage="state.perPage" />
+  </template>
+  ```
+
+  ```js
+  import { SBPagination } from 'superbvue'
+
+  export default defineComponent({
+    components: {
+      SBPagination
+    },
+    data() {
+      return {
+        state: {
+          items: [
+            { age: 45, fistName: 'Jonhson', lastName: 'Macdonald' },
+            { age: 15, fistName: 'Larsen', lastName: 'Shaw' },
+            { age: 65, fistName: 'Geneva', lastName: 'Wilson' },
+            { age: 35, fistName: 'Jami', lastName: 'Carney' }
+          ],
+          fields: ['Age', 'First Name', 'Last Name'],
+          perPage: '3',
+          currentPage: 1
+        }
+      }
+    }
+  })
+  ```
+  *Output*
+  <!-- <SBTableBasic /> -->
+
+  <br />
+
+  *Button variant*
+
+  ```vue
+  <template>
+    <!-- Basic Button variant -->
+    <SBPagination v-bind:totalRows="row" v-model="state.currentPage" v-bind:perPage="state.perPage" />
+
+    <!-- Alignment -->
+    <SBPagination v-bind:totalRows="state.row" v-model="state.currentPage" v-bind:perPage="state.perPage" align="center" />
+    
+    <!-- Use text in props -->
+    <SBPagination v-bind:totalRows="state.row" v-model="state.currentPage" prevText="Prev" lastText="Next" v-bind::perPage="state.perPage" ariaLabel="my-custon-pagination" />
+  </template>
+
+  <script>
+  import { SBPagination } from 'superbvue'
+
+  export default defineComponent({
+    components: {
+      SBPagination
+    },
+    data() {
+      return {
+        state: {
+          rows: 100
+          perPage: '3',
+          currentPage: 1
+        }
+      }
+    }
+  })
+  </script>
+  ```
+
+  *Output*
+  <SBPaginationButtonVariant />
+:::
+
+::: details jsx
+  ```jsx
+  import { SBTable } from 'superbvue'
+
+  export default defineComponent({
+    data() {
+      return {
+        state: {
+          items: [
+            { age: 45, fistName: 'Jonhson', lastName: 'Macdonald' },
+            { age: 15, fistName: 'Larsen', lastName: 'Shaw' },
+            { age: 65, fistName: 'Geneva', lastName: 'Wilson' },
+            { age: 35, fistName: 'Jami', lastName: 'Carney' }
+          ],
+          fields: ['Age', 'First Name', 'Last Name'],
+          perPage: 3,
+          currentPage: 1,
+        }
+      }
+    },
+    methods: {
+      handleSetCurrentPage(event) {
+        this.state.currentPage = event.target.value
+      }
+    },
+    render() {
+      return (
+        <Fragment>
+          <SBPagination totalRows={this.row} onChange={this.handleSetCurrentPage} modelValue={this.state.currentPage} perPage={this.state.perPage} ariaLabel="my-custon-pagination" />
+        </Fragment>
+      )
+    }
+  })
+  ```
+  *Output*
+  <!-- <SBTableBasic /> -->
+
+  <br />
+
+  *Button variant*
+  ```jsx
+  import { SBTable } from 'superbvue'
+
+  export default defineComponent({
+    data() {
+      return {
+        state: {
+          rows: 100
+          perPage: '3',
+          currentPage: 1
+        }
+      }
+    },
+    render() {
+      return (
+        <Fragment>
+          {/* Basic Button variant */}
+          <SBPagination totalRows={this.state.row} perPage={this.state.perPage} />
+
+          {/* Alignment */}
+          <SBPagination totalRows={this.state.row} perPage={this.state.perPage} align="center" />
+          
+          {/* Use text in props */}
+          <SBPagination totalRows={this.state.row} prevText="Prev" lastText="Next" perPage={this.state.perPage} ariaLabel="my-custon-pagination" />
+        </Fragment>
+      )
+    }
+  })
+  ```
+  *Output*
+  <SBPaginationButtonVariant />
+:::
+
+*Pagination Component Property*
+<SBPaginationProperty />
+
 <!-- ## Scrollspy
 ... Coming soon. Stay tune. -->
 ## Spinners
@@ -440,6 +591,8 @@ export default defineComponent({
 ## Tooltips
 ... Coming soon. Stay tune. -->
 
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+
 ## Table
 
 ::: details template
@@ -460,19 +613,19 @@ export default defineComponent({
     return {
       state: {
         items: [
-          { isActive: true, age: 40, fistName: 'Dickerson', lastName: 'Macdonald' },
-          { isActive: false, age: 21, fistName: 'Larsen', lastName: 'Shaw' },
-          { isActive: false, age: 89, fistName: 'Geneva', lastName: 'Wilson' },
-          { isActive: true, age: 38, fistName: 'Jami', lastName: 'Carney' }
+          { age: 45, fistName: 'Jonhson', lastName: 'Macdonald' },
+          { age: 15, fistName: 'Larsen', lastName: 'Shaw' },
+          { age: 65, fistName: 'Geneva', lastName: 'Wilson' },
+          { age: 35, fistName: 'Jami', lastName: 'Carney' }
         ],
-        fields: ['Age', 'First', 'last']
+        fields: ['Age', 'First Name', 'Last Name']
       }
     }
   }
 })
 ```
 *Output*
-<SBTable />
+<SBTableBasic />
 
 <br />
 
@@ -495,10 +648,10 @@ export default defineComponent({
     return {
       state: {
         items: [
-          { isActive: true, age: 40, fistName: 'Dickerson', lastName: 'Macdonald' },
-          { isActive: false, age: 21, fistName: 'Larsen', rowVariant: 'primary', lastName: 'Shaw' },
-          { isActive: false, age: 89, fistName: 'Geneva', lastName: 'Wilson' },
-          { isActive: true, age: 38, fistName: 'Jami', lastName: 'Carney', cellVariant: { fistName: 'info' } }
+          { age: 40, fistName: 'Dickerson', lastName: 'Macdonald' },
+          { age: 21, fistName: 'Larsen', rowVariant: 'primary', lastName: 'Shaw' },
+          { age: 89, fistName: 'Geneva', lastName: 'Wilson' },
+          { age: 38, fistName: 'Jami', lastName: 'Carney', cellVariant: { fistName: 'info' } }
         ],
         fields: ['Age', 'First', 'last']
       }
@@ -507,7 +660,7 @@ export default defineComponent({
 })
 ```
 *Output*
-<SBTable />
+<SBTableVariant />
 :::
 
 ::: details jsx
@@ -519,12 +672,12 @@ export default defineComponent({
     return {
       state: {
         items: [
-          { isActive: true, age: 40, fistName: 'Dickerson', lastName: 'Macdonald' },
-          { isActive: false, age: 21, fistName: 'Larsen', lastName: 'Shaw' },
-          { isActive: false, age: 89, fistName: 'Geneva', lastName: 'Wilson' },
-          { isActive: true, age: 38, fistName: 'Jami', lastName: 'Carney' }
+          { age: 45, fistName: 'Jonhson', lastName: 'Macdonald' },
+          { age: 15, fistName: 'Larsen', lastName: 'Shaw' },
+          { age: 65, fistName: 'Geneva', lastName: 'Wilson' },
+          { age: 35, fistName: 'Jami', lastName: 'Carney' }
         ],
-        fields: ['Age', 'First', 'last']
+        fields: ['Age', 'First Name', 'Last Name']
       }
     }
   },
@@ -539,7 +692,7 @@ export default defineComponent({
 })
 ```
 *Output*
-<SBTable />
+<SBTableBasic />
 
 <br />
 
@@ -553,10 +706,10 @@ export default defineComponent({
     return {
       state: {
         items: [
-          { isActive: true, age: 40, fistName: 'Dickerson', lastName: 'Macdonald' },
-          { isActive: false, age: 21, fistName: 'Larsen', rowVariant: 'primary', lastName: 'Shaw' },
-          { isActive: false, age: 89, fistName: 'Geneva', lastName: 'Wilson' },
-          { isActive: true, age: 38, fistName: 'Jami', lastName: 'Carney', cellVariant: { fistName: 'info' } }
+          { age: 40, fistName: 'Dickerson', lastName: 'Macdonald' },
+          { age: 21, fistName: 'Larsen', lastName: 'Shaw',  rowVariant: 'primary' },
+          { age: 89, fistName: 'Geneva', lastName: 'Wilson' },
+          { age: 38, fistName: 'Jami', lastName: 'Carney', cellVariant: { fistName: 'info' } }
         ],
         fields: ['Age', 'First', 'last']
       }
@@ -573,15 +726,16 @@ export default defineComponent({
 })
 ```
 *Output*
-<SBTable />
+<SBTableVariant />
 :::
 
-*Component Property*
+*Table Component Property*
 <SBTableProperty />
  
 <!-- ## Toasts
 ... Coming soon. Stay tune.
 ## Tooltips
 ... Coming soon. Stay tune. -->
+
 
 ##

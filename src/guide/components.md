@@ -51,8 +51,8 @@ export default defineComponent({
 
 | Property | Type | Default | Description |
 | ------------- |:-------------: | :-----: | :-------------: |
-| disabled | Boolean | false | |
-| onClick | Function | | |
+| disabled | Boolean | false | disable element for clickable |
+| onClick | Function | | callback function | 
 | class | String | | |
 | variant | String |  | Set background color. `primary | secondary | success | danger | warning | info | light | dark` |
 
@@ -107,8 +107,7 @@ export default defineComponent({
 
 | Property | Type | Default | Description |
 | ------------- |:-------------: | :-----: | :-------------: |
-| size | String |  | |
-| pill | Boolean | | |
+| pill | Boolean | | badges more rounded |
 | class | String | | |
 | href | String | | |
 | variant | String |  | Set background color. `primary | secondary | success | danger | warning | info | light | dark` |
@@ -202,13 +201,13 @@ export default defineComponent({
 
 | Property | Type | Default | Description |
 | ------------- |:-------------: | :-----: | :-------------: |
-| disabled | Boolean | false | |
-| toggle | Boolean | false | |
-| pressed | Boolean | false | |
-| block | Boolean | false | |
-| pill | Boolean | false | |
-| squared | Boolean | false | |
-| active | Boolean | false | |
+| disabled | Boolean | false | disable button state | 
+| toggle | Boolean | false | | 
+| pressed | Boolean | false | gives the button the appearance of being pressed |
+| block | Boolean | false |  full-width, “block buttons”  |
+| pill | Boolean | false | button with the pill style appearance |
+| squared | Boolean | false | button with non-rounded corners |
+| active | Boolean | false | active state with active styling |
 | size | String | md | Set button size. `sm | md | lg` |
 | type | String | button | |
 | variant | String |  | Set color on button. `primary | secondary | success | danger | warning | info | light | dark` |
@@ -277,8 +276,8 @@ export default defineComponent({
 | value | Number | | |
 | justify | Boolean | | horizontal alignment |
 | tabs | Boolean | |  |
-| vertical | Boolean | | |
-| pills | Boolean | | |
+| vertical | Boolean | | stack them | 
+| pills | Boolean | | navs more rounded | 
 | class | String | | |
 | style | String | | |
 | id | String | | |
@@ -291,7 +290,7 @@ export default defineComponent({
 | rel | String | | horizontal alignment |
 | target | String | |  |
 | active | Boolean | | |
-| disabled | Boolean | | |
+| disabled | Boolean | | disable element for clickable | 
 | to | String | | |
 | append | Boolean | | |
 | replace | Boolean | | |
@@ -390,8 +389,8 @@ export default defineComponent({
 | striped | Boolean | | Striped |
 | animated | Boolean | | Animated stripes |
 | height | String | | |
-| showProgress | Boolean | | |
-| showValue | Boolean | | |
+| showProgress | Boolean | | Displays the current progress value as a percentage | 
+| showValue | Boolean | | Displays the current progress value | 
 | variant | String |  | Set background color. `primary | secondary | success | danger | warning | info | light | dark` |
 
 
@@ -582,8 +581,8 @@ export default defineComponent({
 | ------------- |:-------------: | :-----: | :-------------: |
 | label | Boolean | false | |
 | type | String | border  | Set spinner type. `border | glow` |
-| small | Boolean | false | |
-| variant | Boolean | false | |
+| small | Boolean | false | When set, rendered a smaller spinner suitable for placing in buttons | 
+| variant | Boolean | false | Applies one of the Bootstrap theme color variants to the component  | 
 | class | String | false | |
 | squared | Boolean | false | |
 <!-- ## Toasts

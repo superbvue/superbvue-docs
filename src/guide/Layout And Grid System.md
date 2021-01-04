@@ -58,9 +58,9 @@ export default defineComponent({
 
 | Property | Type | Default | Description |
 | ------------- |:-------------: | :-----: | :-------------: |
-| fluid | String | | |
+| fluid | String | | full width container |
 | tag | String | |  |
-| widths | String | |  |
+| widths | String | | specify a class that is 100% wide until the specified breakpoint is reached `sm | md | lg | xl | xxl` |
 | class | String | |  |
 | style | String | |  |
 

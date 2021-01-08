@@ -48,13 +48,8 @@ export default defineComponent({
 *Output*
 <SBAlert />
 :::
-
-| Property | Type | Default | Description |
-| ------------- |:-------------: | :-----: | :-------------: |
-| disabled | Boolean | false | disable element for clickable |
-| onClick | Function | | callback function | 
-| class | String | | |
-| variant | String |  | Set background color. `primary | secondary | success | danger | warning | info | light | dark` |
+*SBAlert Property*
+<SBAlertProperty />
 
 <!-- ------------------------------------------------------------------------------------------------------------- -->
 
@@ -214,8 +209,114 @@ export default defineComponent({
 
 <!-- ## Button group
 ... Coming soon. Stay tune. -->
-<!-- ## Card
-... Coming soon. Stay tune. -->
+## Card
+::: details template
+```vue
+<template>
+  <SBCard style="max-width: 20rem;" class="mb-2" imgAlt="Image" imgSrc="https://picsum.photos/600/300/?image=25" imgTop>
+    <SBCardTitle textTag="h4">Some quick example text to build on the card title and make up the bulk of the card's content.</SBCardTitle>
+    <SBButton variant="primary">Go somewhere</SBButton>
+  </SBCard>
+</template>
+```
+*Output*
+<SBCard />
+
+```vue
+<template>
+  <!-- List groups -->
+  <SBCard style="max-width: 20rem;">
+    <SBListgroup>
+      <SBListgroupItem>Cras justo odio</SBListgroupItem>
+      <SBListgroupItem>Dapibus ac facilisis in</SBListgroupItem>
+      <SBListgroupItem>Vestibulum at eros</SBListgroupItem>
+    </SBListgroup>
+  </SBCard>
+</template>
+```
+*Output*
+<SBCardListgroups />
+
+```vue
+<template>
+  <!-- Header Bordered Card -->
+  <SBCard class="text-center" title="Card title" header="Primary header" headerBgVariant="primary" headerTextVariant="white">
+    <SBCardTitle>Some quick example text to build on the card title and make up the bulk of the card's content.</SBCardTitle>
+  </SBCard>
+</template>
+```
+*Output*
+<SBCardWithHeader />
+
+:::
+
+::: details jsx
+```jsx
+export default defineComponent({
+  render() {
+    return (
+      <Fragment>
+        <SBCard style="max-width: 20rem;" class="mb-2" imgAlt="Image" imgSrc="https://picsum.photos/600/300/?image=25" imgTop>
+          <SBCardTitle textTag="h4">Some quick example text to build on the card title and make up the bulk of the card's content.</SBCardTitle>
+          <SBButton variant="primary">Go somewhere</SBButton>
+        </SBCard>
+      </Fragment>
+    )
+  }
+})
+```
+*Output*
+<SBCard />
+
+```jsx
+export default defineComponent({
+  render() {
+    return (
+      <Fragment>
+        {/* List groups */}
+        <SBCard style="max-width: 20rem;">
+          <SBListgroup>
+            <SBListgroupItem>Cras justo odio</SBListgroupItem>
+            <SBListgroupItem>Dapibus ac facilisis in</SBListgroupItem>
+            <SBListgroupItem>Vestibulum at eros</SBListgroupItem>
+          </SBListgroup>
+        </SBCard>
+      </Fragment>
+    )
+  }
+})
+```
+*Output*
+<SBCardListgroups />
+
+```jsx
+export default defineComponent({
+  render() {
+    return (
+      <Fragment>
+        {/* Header Bordered Card */}
+        <SBCard class="text-center" title="Card title" header="Primary header" headerBgVariant="primary" headerTextVariant="white">
+          <SBCardTitle>Some quick example text to build on the card title and make up the bulk of the card's content.</SBCardTitle>
+        </SBCard>
+      </Fragment>
+    )
+  }
+})
+```
+
+*Output*
+<SBCardWithHeader />
+
+:::
+*SBCard Property*
+<SBCardProperty />
+
+*SBCardTitle Property*
+<SBCardTitleProperty />
+
+*SBCardListgroup Property*
+<SBCardListgroupProperty />
+
 <!-- ## Carousel
 ... Coming soon. Stay tune. -->
 <!-- ## Close button

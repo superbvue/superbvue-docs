@@ -1,9 +1,9 @@
 <template>
   <div class="container border">
-    <table class="table table-striped">
+    <table class="table table-striped table-sm">
       <thead>
         <tr>
-          <th  v-for="(value) in state.fields" v-bind:key="value.id">{{value.text}}</th>
+          <th v-for="(value) in state.fields" v-bind:key="value.id">{{value.text}}</th>
         </tr>
       </thead>
       <tbody>
@@ -68,8 +68,10 @@
 </template>
 
 <script>
-export default {
-  name: 'SBTableProperty',
+import Vue from 'vue'
+
+export default Vue.extend({
+    name: 'SBTableProperty',
   data() {
     return {
       state: {
@@ -81,7 +83,7 @@ export default {
       }
     }
   }
-}
+})
 </script>
 
 <style src="../public/bootstrap.css"></style>

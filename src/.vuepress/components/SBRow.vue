@@ -15,9 +15,11 @@
 </template>
 
 <script>
-export default {
+import Vue from 'vue'
+
+export default Vue.extend({
   name: 'SBRow'
-}
+})
 </script>
 
 <style src="../public/bootstrap.css"></style>

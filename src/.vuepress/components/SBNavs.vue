@@ -18,9 +18,11 @@
 </template>
 
 <script>
-export default {
+import Vue from 'vue'
+
+export default Vue.extend({
   name: 'SBNavs'
-}
+})
 </script>
 
 <style src="../public/bootstrap.css"></style>
